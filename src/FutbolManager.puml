@@ -1,0 +1,101 @@
+@startuml
+set separator none
+
+abstract class Jugador {
+    - nombre: String
+    - edad: int
+    - camiseta: int
+    - nacionalidad: String
+    + getNombre(): String
+    + getEdad(): int
+    + getNumero(): int
+    + getNacionalidad(): String
+    + setEdad(int)
+    + setNacionalidad(String)
+    + getTipo(): String
+    + getEstadistica(): int
+    + toLinea(): String
+}
+
+
+class Portero {
+    - atajadas: int
+    + setAtajadas(int)
+}
+
+class Defensor {
+    - despejes: int
+    + setDespejes(int)
+}
+
+class Mediocampista {
+    - asistencias: int
+    + setAsistencias(int)
+}
+
+class Delantero {
+    - goles: int
+    + setGoles(int)
+}
+
+class Entrenador {
+    - nombre: String
+    - nacionalidad: String
+    ~ instancia: Entrenador
+    + getInstancia(): Entrenador
+    + getNombre(): String
+    + getNacionalidad(): String
+    + setNombre(String)
+    + setNacionalidad(String)
+    + toLinea(): String
+}
+
+class JugadorBuilder {
+    - tipo: String
+    - nombre: String
+    - edad: int
+    - camiseta: int
+    - nacionalidad: String
+    - estadistica: int
+    + estadistica(int): JugadorBuilder
+    + build(): Jugador
+}
+
+
+
+interface Sistema {
+    + iniciar()
+    + registrarJugador()
+    + visualizarPlantilla()
+    + editarJugador()
+    + eliminarJugador()
+    + cambiarEntrenador()
+    + guardarYSalir()
+}
+
+class SistemaImpl {
+    - plantilla: List<Jugador>
+    - scanner: Scanner
+    - ARCHIVO: String
+    + iniciar()
+    + registrarJugador()
+    + visualizarPlantilla()
+    + editarJugador()
+    + eliminarJugador()
+    + cambiarEntrenador()
+    + guardarYSalir()
+    - leerPlantilla()
+}
+
+Jugador <|-- Portero
+Jugador <|-- Defensor
+Jugador <|-- Mediocampista
+Jugador <|-- Delantero
+
+SistemaImpl ..|> Sistema
+SistemaImpl --> JugadorBuilder
+SistemaImpl --> Entrenador
+
+JugadorBuilder --> Jugador
+
+@enduml

@@ -1,0 +1,9 @@
+ENTRENADOR;Borghi;Argentino
+JUGADOR;Portero;Juan Pérez;28;1;Chile;85
+JUGADOR;Defensor;Carlos Soto;25;3;Uruguay;140
+JUGADOR;Mediocampista;Martín Silva;22;10;Argentina;12
+JUGADOR;Delantero;Luis Díaz;32;7;España;40
+JUGADOR;Portero;Felipe Bravo;30;12;Chile;60
+JUGADOR;Defensor;Matías Rojas;27;5;Paraguay;100
+JUGADOR;Delantero;Pedro González;21;11;España;8
+JUGADOR;Delantero;Cristiano Ronaldo;40;70;Portugal;400
