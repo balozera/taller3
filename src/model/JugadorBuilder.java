@@ -1,4 +1,4 @@
-package models;
+package model;
 /**
  * Builder para construir objetos de tipo Jugador (y subclases).
  */

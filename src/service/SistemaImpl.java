@@ -1,5 +1,5 @@
-package services;
-import models.*;
+package service;
+import model.*;
 import java.io.*;
 import java.util.ArrayList;
 import java.util.List;

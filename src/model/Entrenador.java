@@ -1,4 +1,4 @@
-package models;
+package model;
 /**
  * Representa al entrenador principal del equipo. Implementado como Singleton.
  */

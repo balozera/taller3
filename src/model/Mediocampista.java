@@ -1,4 +1,4 @@
-package models;
+package model;
 /**
  * Representa un jugador en la posición de mediocampista.
  */

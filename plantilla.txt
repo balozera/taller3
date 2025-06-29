@@ -1,4 +1,4 @@
-ENTRENADOR;Borghi;Argentino
+ENTRENADOR;Argentino;Borghi
 JUGADOR;Portero;Juan Pérez;28;1;Chile;85
 JUGADOR;Defensor;Carlos Soto;25;3;Uruguay;140
 JUGADOR;Mediocampista;Martín Silva;22;10;Argentina;12
